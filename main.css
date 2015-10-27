@@ -1,0 +1,39 @@
+.container_main {
+	width: 900px;
+	margin: auto;
+	border: 1px solid blue;
+	margin-top: 40px;
+}
+
+#header {
+	width: inherit;
+	background: blue;
+	text-align: center;
+	color: white;
+	height: 80px;
+	padding-top: 30px;
+}
+
+#form {
+	width: 80%;
+	margin: auto;
+}
+.input-field {
+	width: 100%;
+	border: 1px solid grey;
+	border-radius: 5px;
+	
+}
+
+.no-border {
+	border: none:
+}
+
+.icon {
+	margin-left: 20px;
+}
+
+#footer {
+	background: lightblue;
+	width: inherit;
+}
