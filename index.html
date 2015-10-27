@@ -8,18 +8,64 @@
 </head>
 <body>
 
-	<div class="container main">
+	<div class="container_main">
+		<div id="header">
+			<h1>Sign Up For My Web App</h1>
+		</div>
+		<div id="formContainer">
 
+		</div>
+		<div id="footer">
+			<button type="submit" id="submit">Submit Form</button>
+		</div>
 	</div>
-
-
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 <script src="main.js"></script>
-<script type="x-tmpl-mustache"></script>
+<script type="x-tmpl-mustache" id="formTemplate">
+<form>
+	{{#formData}}
+		<div id="firstName">
+			<span class="icon">{{icon}}</span>
+			<input {{type}} placeholder={{label}} id={{id}}/>
+		</div>
+		<div id="lastName">
+			<span class="icon">{{icon}}</span>
+			<input {{type}} placeholder={{label}} id={{id}}/>
+		</div>
+		<div id="email">
+			<span class="icon">{{icon}}</span>
+			<input {{type}} placeholder={{label}} id={{id}}/>
+		</div>
+		<div id="currentURL">
+			<span class="icon">{{icon}}</span>
+			<input {{type}} placeholder={{label}} id={{id}}/>
+		</div>
+		<div id="selectOptions">
+			{{#options}}
+			<select name="{{label}}" id="{{id}}">
+			{{/options}}
+				{{#option}}
+				<option>
+				{{/options}}
+			</select>
+		</div>
+		<div id="commentBox">
+			<span class="icon">{{icon}}</span>
+			<input {{type}} placeholder={{label}} id={{id}}/>
+		</div>	
+		<div id="mobileNumber">
+			<span class="icon">{{icon}}</span>
+			<input {{type}} placeholder={{label}} id={{id}}/>
+		</div>
+		<div id="homeNumber">
+			<span class="icon">{{icon}}</span>
+			<input {{type}} placeholder={{label}} id={{id}}/>
+		</div>
+	{{/formData}}
+</form>
+</script>
 
 </body>
 </html>
