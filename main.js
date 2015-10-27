@@ -8,17 +8,8 @@ $.ajax({
   dataType: 'json',
 }).then (function (formData) {
 
-var data = formData.map(function(item){
-		return {
-			fieldType: item.type,
-			fieldLabel: item.label,
-	    fieldId: item.id,
-			fieldIcon: item.icon
-		};
-		});
-
 	var fieldData = {
-		formData: data
+		formData: formData
 	};
 
 	var formTemplate = $("#formTemplate").text();

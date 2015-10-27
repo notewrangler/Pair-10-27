@@ -1,39 +1,80 @@
+
+html{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
 .container_main {
 	width: 900px;
 	margin: auto;
-	border: 1px solid blue;
+	border: 1px solid #989898;
 	margin-top: 40px;
 }
 
 #header {
 	width: inherit;
-	background: blue;
-	text-align: center;
+	background: #5275ce;
 	color: white;
 	height: 80px;
 	padding-top: 30px;
 }
 
-#form {
-	width: 80%;
-	margin: auto;
+h1 {
+	margin: 10px;
+	margin-left: 45px;
+	font-weight: normal;
 }
-.input-field {
-	width: 100%;
-	border: 1px solid grey;
-	border-radius: 5px;
-	
+
+#form {
+	width: 90%;
+	margin: 30px;
 }
 
 .no-border {
-	border: none:
-}
-
-.icon {
+	border: 1px solid #989898;	
+	border-radius: 2px;
+	width: 93%;
+	height: 30px;
+	margin-top: 20px;
+	padding-left: 40px;	
 	margin-left: 20px;
 }
 
+.fontIcon {
+	position: absolute;
+	margin: 10px;
+	margin-top: 29px;
+	margin-left: 30px;
+	color: #989898;
+}
+
 #footer {
-	background: lightblue;
+	background: #80c9f7;
 	width: inherit;
+	height: 100px;
+}
+
+#submit {
+	border: none;
+	border-radius: 3px;
+	background-color: #5275ce;
+	color: white;
+	margin: 30px;
+	width: 120px;
+	height: 40px;
+}
+
+#user-comment {
+	height: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+#select-box {
+	border: 1px solid #989898;
+	border-radius: 2px;
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 796px;
+	height: 40px;
+	background-color: white;
 }

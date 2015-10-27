@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css">
 	<link rel="stylesheet" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -27,10 +28,23 @@
 <script type="x-tmpl-mustache" id="formTemplate">
 <form>
 	{{#formData}}
-		<div class="input-field" id="{{fieldID}}">
-			<span class="fa {{fieldIcon}}"</span>
-			<input class="no-border" type="{{type}}" placeholder="{{fieldLabel}}" id="{{fieldId}}"/>
+		{{#options.length}}
+		<div class="input-field" id="{{id}}">
+			<select id="select-box">
+			<option>{{label}}</option>
+			{{#options}}
+				<option value="{{value}}">{{label}}</option>
+			{{/options}}
+			</select>
 		</div>
+		{{/options.length}}
+
+		{{^options}}
+		<div class="input-field" id="{{id}}">
+			<span class="fa {{icon}} fontIcon"></span>
+			<input class="no-border" type="{{type}}" placeholder="{{label}}" id="{{id}}" />
+		</div>
+		{{/options}}
 	{{/formData}}
 </form>
 </script>
